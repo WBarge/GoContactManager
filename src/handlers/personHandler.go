@@ -3,11 +3,11 @@ package handlers
 import "github.com/go-chi/chi/v5"
 
 type PersonHandler struct {
-	HandlerPatter string
+	HandlerPattern string
 }
 
 func NewPersonHandler() *PersonHandler {
-	return &PersonHandler{HandlerPatter: "/Person"}
+	return &PersonHandler{HandlerPattern: "/Person"}
 }
 
 func (p *PersonHandler) AddHandlerRoutes(router chi.Router) {

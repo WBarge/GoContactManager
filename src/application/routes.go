@@ -29,10 +29,10 @@ func (w *WebServer) RegisterHandlers() *chi.Mux {
 	personalEmailHandler := handlers.NewPersonalEmailHandler()
 	personalPhoneNumberHandler := handlers.NewPersonalPhoneNumberHandler()
 
-	router.Route(prefix+peopleHandler.HandlerPatter, peopleHandler.AddHandlerRoutes)
-	router.Route(prefix+personHandler.HandlerPatter, personHandler.AddHandlerRoutes)
-	router.Route(prefix+personalEmailHandler.HandlerPatter, personalEmailHandler.AddHandlerRoutes)
-	router.Route(prefix+personalPhoneNumberHandler.HandlerPatter, personalPhoneNumberHandler.AddHandlerRoutes)
+	router.Route(prefix+peopleHandler.HandlerPattern, peopleHandler.AddHandlerRoutes)
+	router.Route(prefix+personHandler.HandlerPattern, personHandler.AddHandlerRoutes)
+	router.Route(prefix+personalEmailHandler.HandlerPattern, personalEmailHandler.AddHandlerRoutes)
+	router.Route(prefix+personalPhoneNumberHandler.HandlerPattern, personalPhoneNumberHandler.AddHandlerRoutes)
 
 	return router
 }

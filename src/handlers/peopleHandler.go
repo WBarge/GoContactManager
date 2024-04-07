@@ -5,11 +5,11 @@ import (
 )
 
 type PeopleHandler struct {
-	HandlerPatter string
+	HandlerPattern string
 }
 
 func NewPeopleHandler() *PeopleHandler {
-	return &PeopleHandler{HandlerPatter: "/People"}
+	return &PeopleHandler{HandlerPattern: "/People"}
 }
 
 func (p *PeopleHandler) AddHandlerRoutes(router chi.Router) {
